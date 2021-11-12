@@ -1,0 +1,16 @@
+.posts-section {
+  margin: 8rem auto;
+  .posts {
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  }
+}
+
+@media (max-width: 594px) {
+  .posts-section{
+    .posts {
+      grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+    }
+  }
+}

@@ -1,0 +1,44 @@
+$primary-bg: #25364A;
+$primary-color: #f0f0f0;
+$secondary-bg: #2D4159;
+$secondary-color: #2B373C;
+$item-bg: #fc5185;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  line-height: 2;
+}
+
+*::selection{
+  background-color: $item-bg;
+}
+
+html{
+  overflow-x: hidden;
+}
+
+body {
+  background-color: $primary-bg;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+%container{
+  margin: 0 auto;
+  width: 80%;
+  max-width: 60rem;
+}
+
+.container{
+  @extend %container;
+}
